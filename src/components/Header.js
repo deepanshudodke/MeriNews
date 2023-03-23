@@ -1,37 +1,37 @@
 import "./Header.css";
-
+import { Link } from "react-router-dom";
 const Header = () => {
     return (
         <div className="nav-bar container">
             <h1>Meri News</h1>
             <ul className="container">
-                <a href="#">
+                <Link to="/">
                     <li>Home</li>
-                </a>
-                <a href="#">
+                </Link>
+                <Link to="/business">
                     <li>Business</li>
-                </a>
+                </Link>
                 {/* business entertainment general health science sports technology */}
-                <a href="#">
+                <Link to="/entertainment">
                     <li>Entertainment</li>
-                </a>
-                <a href="#">
+                </Link>
+                <Link to="/health">
                     <li>Health</li>
-                </a>
-                <a href="#">
+                </Link>
+                <Link to="/science">
                     <li>Science</li>
-                </a>
+                </Link>
 
-                <a href="#">
+                <Link to="/sports">
                     <li>Sports</li>
-                </a>
+                </Link>
 
-                <a href="#">
+                <Link to="/technology">
                     <li>Technology</li>
-                </a>
-                <a href="#">
+                </Link>
+                <Link to="/general">
                     <li>General</li>
-                </a>
+                </Link>
             </ul>
         </div>
     );

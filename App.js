@@ -4,6 +4,8 @@ import Body from "./src/components/Body";
 import Header from "./src/components/Header";
 import { createBrowserRouter } from "react-router-dom";
 import { RouterProvider } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import Home from "./src/components/Home";
 // Header
 // Body
 // Footer
@@ -12,7 +14,7 @@ const AppLayout = () => {
     return (
         <>
             <Header />
-            <Body />
+            <Outlet />
         </>
     );
 };
@@ -20,7 +22,17 @@ const AppLayout = () => {
 const AppRouter = createBrowserRouter([
     {
         path: "/",
-        element: <AppLayout />
+        element: <AppLayout />,
+        children: [
+            {
+                path: "/",
+                element: <Home />
+            },
+            {
+                path: "/:category",
+                element: <Body />
+            }
+        ]
     }
 ]);
 
