@@ -1,0 +1,17 @@
+.main-body {
+    /* background-color: pink; */
+    margin-inline: 80px;
+}
+
+.top-text {
+    text-align: center;
+    padding-block: 10px;
+}
+
+.all-card-area {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}

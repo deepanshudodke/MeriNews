@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar {
+    color: rgb(209, 194, 194);
+    background-color: #343a40;
+    padding: 8px;
+    padding-inline: 20px;
+    justify-content: space-between;
+}
+
+li {
+    color: #9a9da0;
+    letter-spacing: 0.5px;
+    margin-inline: 20px;
+    transition: all 0.35s ease;
+}
+
+li:hover {
+    color: white;
+}
